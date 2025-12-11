@@ -1,3 +1,5 @@
+
+import { Outlet } from 'react-router-dom';
 import { AppBar } from './components/navigation/Appbar.tsx';
 
 /**
@@ -7,6 +9,9 @@ function App() {
   return (
     <>
       <AppBar />
+      <div className='outlet-container' >
+        <Outlet />
+      </div>
     </>
   )
 }

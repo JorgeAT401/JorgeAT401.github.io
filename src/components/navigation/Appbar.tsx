@@ -1,20 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './AppBar.scss'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 /**
  * the top navigation bar of the app
  */
 export const AppBar = () => {
   const appbarOptions = ["CV", "About"];
-  const [activeTab, setActiveTab] = useState("CV");
+  const location = useLocation().pathname;
+  const [activeTab, setActiveTab] = useState(location === "/" ? "CV" : location.replace("/",""));
+  const navigate = useNavigate();
 
   /**
    * handles the navbar option click as setting it to be the active one
    */
   const handleClick = (option: string) => {
     setActiveTab(option);
-    console.log(option);
+    navigate(option);
   }
+
+  useEffect(() => {
+    console.log(location);
+  },[location]);
 
   return (
     <nav className="appbar">
