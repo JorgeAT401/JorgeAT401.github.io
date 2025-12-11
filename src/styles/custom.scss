@@ -7,7 +7,7 @@ body,
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #F0F7F4;
+    background-color: #705D56;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -30,7 +30,8 @@ body {
     line-height: 1.5;
 }
 
-p {
+p,
+li {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -57,3 +58,15 @@ h4 {
 small {
     font-size: 0.875rem;
 }
+
+.outlet-container {
+    padding: 100px 5rem 0 5rem;
+    height: 100vh;
+}
+
+.card {
+    background-color: #F0F7F4;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #32292F;
+}
+
