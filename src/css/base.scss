@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+body {
+  font-family: $font-color;
+  color: $primary;
+  max-width: 100%;
+}
+
+

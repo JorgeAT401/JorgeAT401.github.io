@@ -1,0 +1,109 @@
+@use '../../css/variables.scss';
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.exercise-card {
+    background-color: lighten(variables.$background, 3%);
+    border: 1px solid rgba(variables.$accent, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        border-color: variables.$active-color;
+    }
+
+    .badge {
+        background-color: variables.$secondary;
+        width: fit-content;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        color: variables.$font-color;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: variables.$accent;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .btn-exercise {
+        margin-top: 1rem;
+        color: variables.$active-color;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-align: right;
+        &:hover { text-decoration: underline; }
+    }
+}
+
+
+.accordion-section {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: lighten(variables.$background, 2%);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1.2rem;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: variables.$font-color;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: lighten(variables.$background, 5%);
+  }
+
+  &.active {
+    color: variables.$active-color;
+    border-bottom: 1px solid rgba(variables.$active-color, 0.2);
+  }
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+  
+  &.rotate {
+    transform: rotate(180deg); // La flecha gira al abrir
+  }
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  padding: 0 1.2rem;
+
+  &.show {
+    max-height: 2000px; // Un valor alto para que quepan muchas cards
+    opacity: 1;
+    padding: 1.5rem 1.2rem;
+  }
+}
