@@ -1,0 +1,63 @@
+@use '../../css/variables.scss';
+
+.navbar {
+    background-color: variables.$primary;
+    color: variables.$font-color;
+    height: 70px; 
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2); 
+    z-index: 1000;
+    box-sizing: border-box;
+
+    .nav-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: variables.$active-color;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: variables.$font-color;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px; 
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background-color: variables.$active-color;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+
+    &:hover::after, &.active::after {
+        width: 70%;
+    }
+
+    &:hover, &.active {
+        color: variables.$active-color;
+    }
+}

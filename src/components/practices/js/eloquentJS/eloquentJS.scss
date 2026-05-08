@@ -1,0 +1,64 @@
+.fizz-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item {
+  min-width: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+  border: 1px solid #dcdfe6;
+  color: #303133;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fizz { background-color: #e1f5fe; color: #0288d1; border-color: #b3e5fc; }
+.buzz { background-color: #fff3e0; color: #f57c00; border-color: #ffe0b2; }
+.fizzbuzz { background-color: #e8f5e9; color: #388e3c; border-color: #c8e6c9; }
+
+/* Contenedor principal del tablero */
+.chessboard {
+  display: grid; /* Usamos Grid para la cuadrícula */
+  /* Reemplaza '8' por el tamaño de tu variable 'binding' si la haces dinámica */
+  grid-template-columns: repeat(8, 1fr); 
+  width: 100%;
+  max-width: 400px; /* Tamaño máximo para que no se vea gigante */
+  margin: 20px auto; /* Centrado en la pantalla */
+  border: 4px solid #4a2e19; /* Un borde color madera */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  aspect-ratio: 1 / 1; /* Asegura que siempre sea cuadrado */
+}
+
+/* Estilo base para cada cuadrado */
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Esto es para si quieres ponerle piezas (texto) dentro */
+  font-size: 1.2rem; 
+  border: #303133 4px solid; /* Bordes entre los cuadrados */
+}
+
+/* Color para los cuadrados "claros" (# o espacio) */
+/* Tú decides cuál es cuál en tu lógica */
+.square.light {
+  background-color: #f0d9b5; /* Color crema clásico */
+  color: #b58863; /* Color para el texto si lo hay */
+}
+
+/* Color para los cuadrados "oscuros" (# o espacio) */
+.square.dark {
+  background-color: #b58863; /* Color marrón clásico */
+  color: #f0d9b5;
+}
