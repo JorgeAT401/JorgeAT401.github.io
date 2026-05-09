@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./eloquentJS.scss";
-import { greaterThanZero } from "../../../../helpers/numbersHelper";
+import "../eloquentJS.scss";
+import { greaterThanZero } from "../../../../../helpers/numbersHelper";
 
 /** Excersise that renders a grid that initially has the dimensions of a chessboard but can render any sized grid */
 export const Chessboard = () => {

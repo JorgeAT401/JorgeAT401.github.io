@@ -1,4 +1,4 @@
-import "./eloquentJS.scss";
+import "../eloquentJS.scss";
 
 /**all the numbers from 1 to 100 with two eceptions. Numbers divisible by 3 are fizz and numbers divisible by 5 and not 3 are buzz */
 export const FizzBuzz = () => {
