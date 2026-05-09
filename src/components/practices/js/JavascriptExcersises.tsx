@@ -29,6 +29,24 @@ export const JavascriptExcersises = () => {
           level: "Medium",
           link: "chessboard",
         },
+        {
+          title: "Minimum",
+          description: "Write a function that takes two numbers and returns the smallest one.",
+          level: "Easy",
+          link: "minimum",
+        },
+        {
+          title: "Recursion",
+          description: "if a number is even by sustracting 2 until it reaches 0 or 1. If it reaches 0 it's even, if it reaches 1 it's odd.",
+          level: "Easy",
+          link: "recursion",
+        },
+        {
+          title: "Bean Count",
+          description: "Count the number of occurrences of a specific character in a string.",
+          level: "Easy",
+          link: "bean-count",
+        },
       ],
     },
   ];

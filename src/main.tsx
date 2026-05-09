@@ -8,9 +8,12 @@ import { ErrorComponent } from "./components/layout/ErrorComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Practices } from "./components/practices/Practices";
 import { JavascriptExcersises } from "./components/practices/js/JavascriptExcersises";
-import { TriangleLoop } from "./components/practices/js/eloquentJS/TriangleLoop";
-import { FizzBuzz } from "./components/practices/js/eloquentJS/FizzBuzz";
-import { Chessboard } from "./components/practices/js/eloquentJS/Chessboard";
+import { TriangleLoop } from "./components/practices/js/eloquentJS/chapter2/TriangleLoop";
+import { FizzBuzz } from "./components/practices/js/eloquentJS/chapter2/FizzBuzz";
+import { Chessboard } from "./components/practices/js/eloquentJS/chapter2/Chessboard";
+import { Minimum } from "./components/practices/js/eloquentJS/chapter3/Minimum";
+import { Recursion } from "./components/practices/js/eloquentJS/chapter3/Recursion";
+import { BeanCount } from "./components/practices/js/eloquentJS/chapter3/BeanCount";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +41,18 @@ const router = createBrowserRouter([
           {
             path: "js/chessboard",
             element: <Chessboard />,
+          },
+          {
+            path: "js/minimum",
+            element: <Minimum />,
+          },
+          {
+            path: "js/recursion",
+            element: <Recursion />,
+          },
+          {
+            path: "js/bean-count",
+            element: <BeanCount />,
           },
         ],
       },
