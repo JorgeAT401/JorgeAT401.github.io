@@ -21,6 +21,7 @@ export const BeanCount = () => {
     });
     return count;
   }, [input, pickedChar]); 
+  
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
     setPickedChar("");
