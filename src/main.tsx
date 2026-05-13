@@ -14,6 +14,10 @@ import { Chessboard } from "./components/practices/js/eloquentJS/chapter2/Chessb
 import { Minimum } from "./components/practices/js/eloquentJS/chapter3/Minimum";
 import { Recursion } from "./components/practices/js/eloquentJS/chapter3/Recursion";
 import { BeanCount } from "./components/practices/js/eloquentJS/chapter3/BeanCount";
+import { SumOfRange } from "./components/practices/js/eloquentJS/chapter4/SumOfRange";
+import { ReversingArray } from "./components/practices/js/eloquentJS/chapter4/ReversingArray";
+import { List } from "./components/practices/js/eloquentJS/chapter4/List";
+import { DeepComparison } from "./components/practices/js/eloquentJS/chapter4/DeepComparison";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +57,22 @@ const router = createBrowserRouter([
           {
             path: "js/bean-count",
             element: <BeanCount />,
+          },
+          {
+            path: "js/sum-range",
+            element: <SumOfRange />,
+          },
+          {
+            path: "js/reversing-array",
+            element: <ReversingArray />,
+          },
+          {
+            path: "js/list",
+            element: <List />,
+          },
+          {
+            path: "js/deep-comparison",
+            element: <DeepComparison />,
           },
         ],
       },
