@@ -18,6 +18,9 @@ import { SumOfRange } from "./components/practices/js/eloquentJS/chapter4/SumOfR
 import { ReversingArray } from "./components/practices/js/eloquentJS/chapter4/ReversingArray";
 import { List } from "./components/practices/js/eloquentJS/chapter4/List";
 import { DeepComparison } from "./components/practices/js/eloquentJS/chapter4/DeepComparison";
+import { Flatten } from "./components/practices/js/eloquentJS/chapter5/Flatten";
+import { MyOwnLoop } from "./components/practices/js/eloquentJS/chapter5/MyOwnLoop";
+import { Everything } from "./components/practices/js/eloquentJS/chapter5/Everything";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +76,18 @@ const router = createBrowserRouter([
           {
             path: "js/deep-comparison",
             element: <DeepComparison />,
+          },
+          {
+            path: "js/flatten",
+            element: <Flatten />,
+          },
+          {
+            path: "js/my-own-loop",
+            element: <MyOwnLoop />,
+          },
+          {
+            path: "js/everything",
+            element: <Everything />,
           },
         ],
       },
