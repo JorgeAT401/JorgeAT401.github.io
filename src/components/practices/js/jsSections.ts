@@ -63,6 +63,24 @@ export const sections = [
           level: "Medium",
           link: "deep-comparison",
         },
+        {
+          title: "Flatten",
+          description: "Flattens an array of arrays into a single array.",
+          level: "Easy",
+          link: "flatten",
+        },
+        {
+          title: "My Own Loop",
+          description: "Creates a custom loop function.",
+          level: "Medium",
+          link: "my-own-loop",
+        },
+        {
+          title: "Everything",
+          description: "Implement every and some functions that behave like the standard Array.prototype.every and Array.prototype.some.",
+          level: "Medium",
+          link: "everything",
+        },
       ],
     },
   ];
