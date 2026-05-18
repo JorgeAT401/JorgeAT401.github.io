@@ -81,6 +81,18 @@ export const sections = [
           level: "Medium",
           link: "everything",
         },
+        {
+          title: "Vector Visualizer",
+          description: "Visualize vectors in a 2D space.",
+          level: "Medium",
+          link: "vector-visualizer",
+        },
+        {
+          title: "Group Manager",
+          description: "Manage a collection of unique items.",
+          level: "Medium",
+          link: "group-manager",
+        },
       ],
     },
   ];
