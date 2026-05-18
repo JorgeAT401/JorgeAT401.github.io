@@ -21,6 +21,8 @@ import { DeepComparison } from "./components/practices/js/eloquentJS/chapter4/De
 import { Flatten } from "./components/practices/js/eloquentJS/chapter5/Flatten";
 import { MyOwnLoop } from "./components/practices/js/eloquentJS/chapter5/MyOwnLoop";
 import { Everything } from "./components/practices/js/eloquentJS/chapter5/Everything";
+import { VectorVisualizer } from "./components/practices/js/eloquentJS/chapter6/VectorVisualizer";
+import { GroupManager } from "./components/practices/js/eloquentJS/chapter6/GroupManager";
 
 const router = createBrowserRouter([
   {
@@ -88,6 +90,14 @@ const router = createBrowserRouter([
           {
             path: "js/everything",
             element: <Everything />,
+          },
+          {
+            path: "js/vector-visualizer",
+            element: <VectorVisualizer />,
+          },
+          {
+            path: "js/group-manager",
+            element: <GroupManager />,
           },
         ],
       },
